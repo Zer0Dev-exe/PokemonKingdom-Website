@@ -98,6 +98,9 @@ p{
     position: relative;
     left: 150px;
 }
+.btns a{
+    color: white;
+}
 button{
     outline: none;
     border: none;
