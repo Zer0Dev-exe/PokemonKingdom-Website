@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',Arial, Helvetica, sans-serif;
+}
+body{
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #060606;
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+    background-color: #e6a872;
+}
+.logo{
+    display: flex;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+b{
+    font-size: 70px;
+    color: black;
+}
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 17px;
+    color: black;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navItems li:hover a,
+.links a:hover{
+    color: #fcf9ff;
+}
+.links a{
+    font-size: 30px;
+    color: black;
+    margin: 25px 10px;
+}
+.cols{
+    width: 50%;
+}
+.topline{
+    display: block;
+    position: relative;
+    font-size: 19px;
+    letter-spacing: 5px;
+    color: white;
+}
+.topline::after{
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: white;
+}
+h1{
+    display: block;
+    font-size: 7em;
+    font-weight: 900;
+    color: white;
+}
+.multiText{
+    color: #f99c42;
+    text-transform: capitalize;
+}
+p{
+    display: block;
+    width: 90%;
+    font-size: 1.2em;
+    color: #f99c42;
+}
+.btns{
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px grey;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    width: calc(130% - 80%);
+    top: -100px;
+    right: 50px;
+    animation: animateUser 4s Linear infinite;
+}
+@keyframes animateUser{
+    50%{
+        right: 30px;
+        top: -90px;
+    }
+}
