@@ -4,20 +4,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',Arial, Helvetica, sans-serif;
+    font-family: 'poppins', Arial, Helvetica, sans-serif;
 }
 
 body{
     overflow: hidden;
 }
 
-.container{
+.container {
     width: 100%;
     min-height: 200vh;
     background-color: #060606;
 }
 
-nav{
+nav {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -27,7 +27,7 @@ nav{
     background-color: #e9e9e9;
 }
 
-.logo{
+.logo {
     display: flex;
     font-size: 18px;
     font-weight: 800;
@@ -38,22 +38,22 @@ nav{
     align-items: center;
 }
 
-b{
+b {
     font-size: 70px;
     color: black;
 }
 
-.navItems{
+.navItems {
     display: flex;
     align-items: center;
 }
 
-.navItems li{
+.navItems li {
     list-style: none;
     margin: 0 15px;
 }
 
-.navItems li a{
+.navItems li a {
     font-size: 15px;
     color: black;
     letter-spacing: 3px;
@@ -62,26 +62,17 @@ b{
 }
 
 .navItems li:hover a,
-.links a:hover{
+.links a:hover {
     color: #fcf9ff;
 }
 
-.links a{
+.links a {
     font-size: 30px;
     color: black;
     margin: 25px 10px;
 }
 
-.cols{
-    width: 50%;
-}
-
-.cols0{
-    width: 60%;
-    z-index: 5;
-}
-
-.topline{
+.topline {
     display: block;
     position: relative;
     font-size: 19px;
@@ -89,7 +80,7 @@ b{
     color: white;
 }
 
-.topline::after{
+.topline::after {
     position: absolute;
     content: '';
     height: 4px;
@@ -98,15 +89,23 @@ b{
     background-color: white;
 }
 
-h1{
+h1 {
     font-size: 3em;
+    font-weight: 700;
+    color: white;
+    padding-left: 70px;
+    padding-top: 90px;
+}
+
+h2 {
+    font-size: 2em;
     font-weight: 700;
     color: white;
     padding-left: 70px;
     padding-top: 90px
 }
 
-.multiText{
+.multiText {
     color: #f99c42;
     text-transform: capitalize;
     white-space: normal;
@@ -122,7 +121,7 @@ h1{
     font-style: italic;
 }
 
-#boton{
+#boton {
     display: block;
     width: 100px;
     font-family: Arial, Helvetica, sans-serif;
@@ -133,9 +132,10 @@ h1{
     margin: 150px 130px;
     color: #fff;
     text-decoration: none;
+    text-align: center;
 }
 
-.imgbox{
+.imgbox {
     position: relative;
     width: 100%;
     width: calc(130% - 80%);
@@ -143,9 +143,55 @@ h1{
     right: 50px;
     animation: animateUser 4s Linear infinite;
 }
-@keyframes animateUser{
+@keyframes animateUser {
     50%{
         right: 30px;
         top: -90px;
     }
+}
+
+.center_main {
+    position: relative;
+    z-index: 100;
+    padding: 32px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+/* Join Button */
+.mainPage {
+    width: 140px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.mainPage:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.mainPage:focus {
+    outline: none;
+}
+
+.mainPage.btn {
+    background-image: linear-gradient(to right,
+            #29323c,
+            #485563,
+            #2b5876,
+            #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
 }

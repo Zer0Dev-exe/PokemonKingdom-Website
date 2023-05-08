@@ -3,36 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="link">
-        <link rel="stylesheet" href="estilo.css">
-        <link rel="icon" type="image/png" href="Imagenes/logo.png">
-        <title>Home - Pokémon</title>
-        <meta name="description" content="Bienvenidos a la página web del servidor" />
-        <meta property="og:image" content="https://media.discordapp.net/attachments/979331923547652126/1088106531226144798/Icono_Servidor.png?width=205&height=205" />
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="icon" type="image/png" href="static/media/logo.png">
+        <script src="static/js/animations/bgtitle.js"></script>
+        <script src="static/js/animations/navtitle.js"></script>
+        <title>Home - Pokémon Kingdom</title>
     </head>
     <body>
         <div class="container">
             <nav>
-                <div class="logo">pokémon kingdom<b></b></div>
+                <div class="logo mainlogo bgtitle" id="navtitle" data-value="Pokémon Kingdom">Pokémon Kingdom<b></b></div>
                 <ul class="navItems">
-                    <li><a href="Navbar/inicio.html">inicio</a></li>
-                    <li><a href="Navbar/información.html">info</a></li>
-                    <li><a href="Navbar/noticias.html">noticias</a></li>
-                    <li><a href="Navbar/staff.html">staff</a></li>
-                    <li><a href="Navbar/contacto.html">soporte</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="./info.html">Info</a></li>
+                    <li><a href="./noticias.html">Noticias</a></li>
+                    <li><a href="./staff.html">Staff</a></li>
+                    <li><a href="./soporte.html">Soporte</a></li>
                 </ul>
             </nav>
-            <div class="wrapper">
-                <div class="cols cols0">
-                    <h1>Servidor<br>con<span class="multiText"></span></h1></br>
-                    <p id="descripcion">Bienvenido a la página oficcial de Pokémon Kingdom, esperamos que te guste ^^</p>
-                    <a href="https://discord.gg/pokemon-kingdom" target="_blank" id="boton">Unirte!</a>
-                    <img class="logo" src="https://media.discordapp.net/attachments/979331923547652126/993195736630046771/Logo_Server.png?width=206&height=206">
-                </div>
+            <div class="center_main">
+                <h1 id="bgtitle" data-value="Pokémon Kingdom">Pokémon Kingdom</h1>
+                <h2>Servidor con <span class="multiText"></span></h2></br>
+                <a href="https://discord.com/invite/C5Wd46GfzF" target="_blank">
+                    <button class="mainPage btn">
+                        <img class="logobtn" src="https://media.discordapp.net/attachments/979331923547652126/993195736630046771/Logo_Server.png?width=30&height=30" style="float:left;margin-left: 10%">
+                        <p style="vertical-align: middle;">Unirse</p>
+                    </button>
+                </a>
             </div>
             <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
             <script>
-                var typingEffect = new Typed(".multiText",{
-                    strings: ["Pokétwo","Nekotina","Myuu","Economía","y mucho más"],
+                var typingEffect = new Typed(".multiText", {
+                    strings: ["Pokétwo","Nekotina","Myuu","Economía","Deriver"],
                     loop: true,
                     typeSpeed: 80,
                     backSpeed: 70,
