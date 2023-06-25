@@ -2,7 +2,6 @@
 
 Simple HTML static website for Pokémon Kingdom
 
-Live preview: https://preview.tr25.es
 ## Authors
 
 - [@Bartolumiu](https://www.github.com/Bartolumiu)
